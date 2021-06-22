@@ -1,0 +1,184 @@
+@charset "utf-8";
+
+body {
+    margin: 24px;
+    margin-bottom: 48px;
+    margin-left: 32px;
+    font-family: 'APPLE SD Gothic NEO', 'Noto Sans CJK KR', '맑은 고딕', '돋움', sans-serif;
+    /*font-size: large;*/
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.6;
+    -webkit-text-size-adjust: 100%;
+}
+
+h1 {
+    word-break: keep-all;
+    font-weight: 400;
+    line-height: 1.1;
+    letter-spacing: -1px;
+}
+
+h2 {
+    margin-top: 48px;
+    margin-bottom: 8px;
+    word-break: keep-all;
+    font-size: 1em;
+    font-weight: 400;
+    line-height: 1;
+    letter-spacing: -1px;
+}
+
+ul {
+    padding-left: 0;
+}
+
+li::marker {
+    content: "- ";
+}
+
+a {
+    border-bottom: 1px dashed #eee;
+    text-decoration: none;
+}
+
+pre {
+    display: block;
+    margin: 16px 0;
+    padding: 0; 
+    border: 1px solid #eee;
+    border-radius: 4px; 
+    white-space: pre-wrap;
+    background-color: #f8f8f8;
+}
+
+pre code {
+    display: block;
+    padding: 8px;
+}
+
+code {
+    font-size: 0.8em;
+    letter-spacing: -0.5px;
+}
+
+.index-view {
+
+}
+
+.index-view .tags-container .tag {
+    /*display: inline-block;*/
+    /*margin-right: 4px;*/
+    /*margin-bottom: 4px;*/
+    /*line-height: 1;*/
+}
+
+.tags-view {
+
+}
+
+.tags-view .tag-name {
+    position: relative;
+    display: inline-block;
+    line-height: 1;
+}
+
+.tags-view .tag-name:before {
+    content: " ";
+    position: absolute;
+    bottom: 4px;
+    left: -4px; 
+    right: -4px;
+    height: 8px;
+    background-color: #61A641;
+    opacity: 0.3;
+    z-index: -1;
+}
+
+.tags-view .tags-container {
+
+}
+
+.tags-view .tags-container a {
+    display: inline-block;
+    margin-right: 4px;
+    margin-bottom: 4px;
+    line-height: 1;
+}
+
+.tags-view .posts-container {
+
+}
+
+.tags-view .posts-container .post a {
+    word-break: keep-all;
+}
+
+.tags-view .posts-container .post + .post {
+    margin-top: 16px;
+}
+
+.tags-view .posts-container .id {
+
+}
+
+.tags-view .posts-container .id, 
+.tags-view .posts-container .tags {
+    margin-top: 4px;
+    line-height: 1;
+    font-size: 12px;
+    color: #888;
+}
+
+.post-view {}
+
+.post-view .page-id {
+    font-size: 12px;
+}
+
+.post-view h1 {
+    margin-top: 0;
+}
+
+.post-view .content {
+    word-break:  break-all;
+}
+
+/* ul */
+/*.post-view .links {
+    padding-left: 0;
+}*/
+
+.post-view .links a {
+    display: block;
+    /*display: inline;*/
+    /*font-size: 12px;*/
+    /*line-height: 1; */
+
+    /* 1줄 말줄임 */
+    white-space: nowrap;
+    word-wrap: normal;
+    text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    overflow: hidden;
+
+    /* 2줄 말줄임 */
+    /*overflow: hidden;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;*/
+}
+
+.post-view .tags-container .tag {
+    display: block;
+}
+
+
+.footer-container {
+    margin-top: 8px;
+    padding-top: 8px;
+    border-top: 1px solid #ccc;
+    font-size: 12px;
+}
